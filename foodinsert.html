@@ -1,0 +1,28 @@
+<?php
+include "config.php";
+if(isset($_POST['submit'])){
+
+	$category=$_POST['Category'];
+
+	$fname=$_FILES['Image']['name'];
+	$ftemp=$_FILES['Image']['tmp_name'];
+	$folder="images/".$fname;
+
+
+	$name=$_POST['Name'];
+	$cost=$_POST['Cost'];
+
+	// $conn=mysqli_connect("localhost","root","","pet");
+	// $conn=mysqli_connect("localhost","id18195887_petexchange","b!}Kdz@0KB^WiGpM","id18195887_petshop");
+
+	$sql="INSERT INTO food(Category,Image,Name,Cost) VALUES('$category','$fname','$name','$cost')";
+
+	$result=mysqli_query($conn,$sql);
+
+	if(move_uploaded_file($ftemp, $folder)){
+		echo "added";
+	} else {
+		echo "not added";
+	}
+}
+?>

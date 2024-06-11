@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<!-- Mirrored from www.ingridkuhn.com/themes/woof!/services.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jan 2022 08:16:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+      <meta charset="utf-8">
+      <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <![endif]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+	  <!-- page title -->
+      <title>Woof!</title>
+	   <!--[if lt IE 9]>
+      <script src="js/respond.js"></script>
+      <![endif]-->
+	  <!-- Font files -->
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CQuicksand:400,500,700" rel="stylesheet">
+      <link href="fonts/flaticon/flaticon.css" rel="stylesheet" type="text/css">
+      <link href="fonts/fontawesome/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+	  <!-- Fav icons -->
+      <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- style CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      <!-- plugins CSS -->
+      <link href="css/plugins.css" rel="stylesheet">
+      <!-- Colors CSS -->
+      <link href="styles/maincolors.css" rel="stylesheet">
+      <!-- LayerSlider CSS -->
+      <link rel="stylesheet" href="vendor/layerslider/css/layerslider.css">
+	   <!-- Switcher Only -->
+	<link rel="stylesheet" id="switcher-css" type="text/css" href="switcher/css/switcher.css" media="all" />
+	<!-- END Switcher Styles -->
+
+	<!-- Demo Examples (For Module #3) -->
+	<link rel="alternate stylesheet" type="text/css" href="styles/agility.css" title="agility" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/dogwalker.css" title="dogwalker" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/maincolors.css" title="maincolors" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/pethotel.css" title="pethotel" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/petshop.css" title="petshop" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/vetclinic.css" title="vetclinic" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/adoption.css" title="adoption" media="all" />
+	<!-- END Demo Examples -->
+   </head>   
+   <!-- ==== body starts ==== -->
+   <body id="top">
+   <!-- Start Switcher -->
+	<div class="demo_changer">
+	   <div class="demo-icon">
+		  <i class="fa fa-cog fa-spin fa-2x"></i>
+	   </div>
+	   <!-- end opener icon -->
+	   <div class="form_holder text-center">
+		  <div class="row">
+			 <div class="col-lg-12">
+				<div class="predefined_styles">
+				 <h4>Template Options</h4>
+				 <hr>
+				   <p>Choose a Color Skin</p>
+				   <!-- MODULE #3 -->
+				    <div class="col-lg-12">
+				   <a href="agility.php" class="styleswitch"><img src="switcher/images/agility.png" alt="Agility"></a>		
+				   <a href="pethotel.php" class="styleswitch"><img src="switcher/images/pethotel.png" alt="Pet Hotel"></a>		
+				   <a href="petshop.php" class="styleswitch"><img src="switcher/images/petshop.png" alt="Pet Shop"></a>		
+				   </div>
+				    <div class="col-lg-12">
+				   <a href="dogwalker.php" class="styleswitch"><img src="switcher/images/dogwalker.png" alt="Dog walker"></a>	
+                    <a href="vetclinic.php" class="styleswitch"><img src="switcher/images/vetclinic.png" alt="Vet Clinic"></a>				   
+				   <a href="maincolors.php" class="styleswitch"><img src="switcher/images/maincolors.png" alt="Main Colors"></a>
+				   <a href="adoption.php" class="styleswitch"><img src="switcher/images/adoption.png" alt="Main Colors"></a>
+                   </div>				   
+				   <!-- END MODULE #3 -->
+				</div>
+				<!-- end predefined_styles -->
+				<p>Change Home Header</p>
+				<select id="headers" class="show-menu-arrow selectpicker" onchange="document.location = this.value">
+				   <option value="">Select</option>
+				   <option value="index2.php">Video Header</option>
+				   <option value="index.php">Layerslider Header</option>
+				</select>
+				<p>Layout</p>
+					<a href="index_boxed.php" class="btn btn-primary btn-sm">Boxed</a>
+				<a href="index.php" class="btn btn-primary btn-sm">Full Width</a>
+			 </div>
+			 <!-- end col -->
+		  </div>
+		  <!-- end row -->
+	   </div>
+	   <!-- end form_holder -->
+	</div>
+	<!-- end demo_changer -->
+	<!-- End Switcher -->
+      <!-- Preloader -->
+      <div id="preloader">
+         <div class="spinner">
+            <div class="bounce1"></div>
+         </div>
+		  <!-- /spinner -->
+      </div>
+      <!-- /Preloader ends -->
+                        <?php
+include "include/header.php";
+?>
+	 
+	   <!-- /nav --><!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid overlay">
+   <div class="jumbo-heading">
+      <!-- section-heading -->
+      <div class="section-heading" data-aos="zoom-in">
+         <h1>Our Services</h1>
+      </div>
+      <!-- /section-heading -->
+      <!-- Breadcrumbs -->
+      <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index-2.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Services 1</li>
+         </ol>
+      </nav>
+      <!-- /nav -->
+   </div>
+   <!-- /jumbo-heading -->
+</div>
+<!-- /jumbotron -->
+<div class="container-fluid">
+   <div class="col-lg-12 col-md-12 col-12">
+      <h1 class="text-center pt-3">Doctor's Details</h1>
+   </div>
+</div>
+<!-- ==== Page Content ==== -->
+<div class="page">
+	<div class="container">
+   <div class="container block-padding pt-0">
+      <div class="row">
+         <div class="contact-info col-lg-5">
+            
+            <!-- Form Starts -->
+
+            <?php
+            include "config.php";
+   $Id=$_POST["Petname"];
+   // echo $I;die;
+
+        //   $conn=mysqli_connect("localhost","root","","petshop");
+        //   include "config.php";
+
+          $sql="SELECT * FROM doctor where Category='$Id'";
+
+          $query=mysqli_query($conn,$sql);
+
+          while($data=mysqli_fetch_array($query))
+          {
+
+            ?>
+            <div id="contact_form">
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <label>Specialist In<span class="required">*</span></label>
+                        <input type="text" name="name" class="form-control input-field" required="" value="<?php echo $data['Category'];?>"> 
+                     </div>
+                     <div class="col-md-6">
+                        <label>Name<span class="required">*</span></label>
+                        <input type="text" name="name" class="form-control input-field" required="" value="<?php echo $data['Name'];?>"> 
+                     </div>
+					 </div>
+					 <div class="row">
+                     <div class="col-md-6">
+                        <label>Contact Number <span class="required">*</span></label>
+                        <input type="email" name="email" class="form-control input-field" required="" value="<?php echo $data['Contact'];?>"> 
+                     </div>
+                  </div>
+                
+					 <div class="row">
+                     <div class="col-md-6">
+                        <label>Address<span class="required">*</span></label>
+                        <textarea name="message" id="message" class="textarea-field form-control" rows="3"  required=""><?php echo $data['Address'];?></textarea>
+                     </div>
+                  </div>
+                 
+               </div>
+			    <!-- /form-group-->
+               <!-- Contact results -->
+               <div id="contact_results"></div>
+            </div>
+			 <!-- /contact)form-->
+         </div>
+         <?php
+      }
+      ?>
+		
+		
+         <!-- /col-xl-->
+         <div class="col-xl-6">
+            <img src="img/1.jpg" alt=""   data-aos="fade-down"  data-aos-duration="2000"  class="img-fluid border-irregular1">
+         </div>
+      </div>
+      <!-- /row -->
+   </div>
+   <!-- /container -->
+   <!-- services carousel -->
+   <div class="bg-light-custom block-padding border-irregular1">
+      <div id="owl-services" class="container owl-carousel owl-theme">
+         <!-- service 1  -->
+         <div class="col-md-12">
+            <div class="serviceBox">
+               <!-- service icon -->
+               <div class="service-icon">
+                  <i class="flaticon-people-1"></i>
+               </div>
+               <!-- service content -->
+               <div class="service-content">
+                  <h6>Fun Activities</h6>
+                  <p>
+                       Does your dog have some dog friends? Invite them over to your house or to the park for some playtime! This way, you’ll get the chance to catch up with your friends too – and you’ll have one tired dog at the end of the day. Becoming a dog owner is a great way to meet new friends too.
+                  </p>
+                  
+               </div>
+            </div>
+         </div>
+         <!-- service 2  -->
+         <div class="col-md-12">
+            <div class="serviceBox">
+               <!-- service icon -->
+               <div class="service-icon">
+                  <i class="flaticon-pet-shelter"></i>
+               </div>
+               <!-- service content -->
+               <div class="service-content">
+                  <h6>Pet Hotel</h6>
+                  <p>
+                   A pet hotel, also known as a pet resort or luxury animal kennel, is an upscale facility that tends to the needs of clients' pets, while they are out of town. Most pet hotel owners personally enjoy the company of animals and understand their needs.
+                  </p>
+                 
+               </div>
+            </div>
+         </div>
+         <!-- service 3  -->
+         <div class="col-md-12">
+            <div class="serviceBox">
+               <!-- service icon -->
+               <div class="service-icon">
+                  <i class="flaticon-animals-2"></i>
+               </div>
+               <!-- service content -->
+               <div class="service-content">
+                  <h6>Grooming Services</h6>
+                  <p>
+                      Pet grooming is cleaning of the pets and taking hygienic care of the pets. ... Grooming services include bathing, nail clipping, and brushing of pet animals.
+                  </p>
+                 
+               </div>
+            </div>
+         </div>
+         <!-- service 4 -->
+         <div class="col-md-12">
+            <div class="serviceBox">
+               <!-- service icon -->
+               <div class="service-icon">
+                  <i class="flaticon-dog-with-first-aid-kit-bag"></i>
+               </div>
+               <!-- service content -->
+               <div class="service-content">
+                  <h6>Veterinary 24/7</h6>
+                  <p>
+                       Veterinarians care for the health of animals and work to protect public health. They diagnose, treat, and research medical conditions and diseases of pets, livestock, and other animals.
+                  </p>
+                  
+               </div>
+            </div>
+         </div>
+         <!-- service 5 -->
+         <div class="col-md-12">
+            <div class="serviceBox">
+               <!-- service icon -->
+               <div class="service-icon">
+                  <i class="flaticon-syringe"></i>
+               </div>
+               <!-- service content -->
+               <div class="service-content">
+                  <h6>Vaccines</h6>
+                  <p>
+                      Vaccines help prepare a dog's immune system to defend itself from any invasion of disease-causing organisms. Vaccines contain antigens, which mimic disease-causing organisms in a dog's immune system, but don't actually cause disease.
+                  </p>
+                  
+               </div>
+            </div>
+         </div>
+         <!-- service 6 -->
+         <div class="col-md-12">
+            <div class="serviceBox">
+               <!-- service icon -->
+               <div class="service-icon">
+                  <i class="flaticon-dog-training-3"></i>
+               </div>
+               <!-- service content -->
+               <div class="service-content">
+                  <h6>Training</h6>
+                  <p>
+                          Instructors are taught science-based training principles that reward appropriate dog behaviors instead of punishing negative ones. Positive Dog Training at home is a rewards-based approach to teaching pet parents how dogs think, learn, and communicate with others.
+                  </p>
+             
+               </div>
+            </div>
+         </div>
+         <!--col-md-12  -->
+      </div>
+      <!-- /owl-services -->
+   </div>
+   <!-- /bg-light-custom -->   </div>
+   <!--/ container -->
+   <div class="container bottom-block-padding">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-12 text-center center-block d-block mx-auto">
+            <!-- Image -->
+            <img src="img/services3.png" alt=""   data-aos="fade-down" class="img-fluid">
+         </div>
+         <!--/ col-lg -->
+        
+         <!--/col-lg  -->
+      </div>
+      <!--/row -->
+   </div>
+   <!-- /container -->
+</div>
+<!-- /page-->
+<!-- ==== footer ==== -->
+<?php include "include/footer.php"; ?>
+<!--/ footer-->
+<!-- Bootstrap core & Jquery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Custom Js -->
+<script src="js/custom.js"></script>
+<script src="js/plugins.js"></script>
+<!-- Prefix free -->
+<script src="js/prefixfree.min.js"></script>
+<!-- Bootstrap Select Tool (For Module #4) -->
+<script src="switcher/js/bootstrap-select.js"></script>
+<!-- All Scripts & Plugins -->
+<script src="switcher/js/dmss.js"></script>	
+</body>
+
+<!-- Mirrored from www.ingridkuhn.com/themes/woof!/services.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jan 2022 08:16:24 GMT -->
+</html>

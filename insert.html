@@ -1,0 +1,38 @@
+<?php
+include "config.php";
+// echo"<pre>";
+// print_r($_POST);die;
+if(isset($_POST['submit']))
+{
+	$nil=$_POST['Category'];
+
+	$ca=$_POST['Cost'];
+	$na=$_POST['Pet'];
+	$age=$_POST['Age'];
+	$owname=$_POST['Owner'];
+	$numbers=$_POST['Numbers'];
+	$address=$_POST['Address'];
+	$fname=$_FILES['Image']['name'];
+	$ftemp=$_FILES['Image']['tmp_name'];
+	$folder="img/".$fname;
+
+	
+//print_r($folder);die;
+// $conn=mysqli_connect("localhost","root","","petshop");
+	// $conn=mysqli_connect("localhost","id18195887_petexchange","b!}Kdz@0KB^WiGpM","id18195887_petshop");
+// $sql1 ="SELECT id FROM "
+$sql="INSERT INTO category(Category,Cost,Pet,Age,Owner,Numbers,Address,Image)
+ VALUES('$nil','$ca','$na','$age','$owname','$numbers','$address','$fname')";
+//print_r($sql);die;
+$result=mysqli_query($conn,$sql);
+
+
+if(move_uploaded_file($ftemp,$folder))
+{
+	echo "added";
+	
+}else{
+	 echo "not added";
+	}
+}
+?>

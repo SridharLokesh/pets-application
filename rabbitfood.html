@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<!-- Mirrored from www.ingridkuhn.com/themes/Pet Shop!/adoption.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jan 2022 08:16:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+      <meta charset="utf-8">
+      <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <![endif]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+	  <!-- page title -->
+      <title>Pet Shop!</title>
+	   <!--[if lt IE 9]>
+      <script src="js/respond.js"></script>
+      <![endif]-->
+	  <!-- Font files -->
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CQuicksand:400,500,700" rel="stylesheet">
+      <link href="fonts/flaticon/flaticon.css" rel="stylesheet" type="text/css">
+      <link href="fonts/fontawesome/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+	  <!-- Fav icons -->
+      <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- style CSS -->
+      <link href="css/style.css" rel="stylesheet">
+      <!-- plugins CSS -->
+      <link href="css/plugins.css" rel="stylesheet">
+      <!-- Colors CSS -->
+      <link href="styles/maincolors.css" rel="stylesheet">
+      <!-- LayerSlider CSS -->
+      <link rel="stylesheet" href="vendor/layerslider/css/layerslider.css">
+	   <!-- Switcher Only -->
+	<link rel="stylesheet" id="switcher-css" type="text/css" href="switcher/css/switcher.css" media="all" />
+	<!-- END Switcher Styles -->
+
+	<!-- Demo Examples (For Module #3) -->
+	<link rel="alternate stylesheet" type="text/css" href="styles/agility.css" title="agility" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/dogwalker.css" title="dogwalker" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/maincolors.css" title="maincolors" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/pethotel.css" title="pethotel" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/petshop.css" title="petshop" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/vetclinic.css" title="vetclinic" media="all" />
+	<link rel="alternate stylesheet" type="text/css" href="styles/adoption.css" title="adoption" media="all" />
+	<!-- END Demo Examples -->
+   </head>   
+   <!-- ==== body starts ==== -->
+   <body id="top">
+   <!-- Start Switcher -->
+	<div class="demo_changer">
+	   <div class="demo-icon">
+		  <i class="fa fa-cog fa-spin fa-2x"></i>
+	   </div>
+	   <!-- end opener icon -->
+	   <div class="form_holder text-center">
+		  <div class="row">
+			 <div class="col-lg-12">
+				<div class="predefined_styles">
+				 <h4>Template Options</h4>
+				 <hr>
+				   <p>Choose a Color Skin</p>
+				   <!-- MODULE #3 -->
+				    <div class="col-lg-12">
+				   <a href="agility.php" class="styleswitch"><img src="switcher/images/agility.png" alt="Agility"></a>		
+				   <a href="pethotel.php" class="styleswitch"><img src="switcher/images/pethotel.png" alt="Pet Hotel"></a>		
+				   <a href="petshop.php" class="styleswitch"><img src="switcher/images/petshop.png" alt="Pet Shop"></a>		
+				   </div>
+				    <div class="col-lg-12">
+				   <a href="dogwalker.php" class="styleswitch"><img src="switcher/images/dogwalker.png" alt="Dog walker"></a>	
+                    <a href="vetclinic.php" class="styleswitch"><img src="switcher/images/vetclinic.png" alt="Vet Clinic"></a>				   
+				   <a href="maincolors.php" class="styleswitch"><img src="switcher/images/maincolors.png" alt="Main Colors"></a>
+				   <a href="adoption.php" class="styleswitch"><img src="switcher/images/adoption.png" alt="Main Colors"></a>
+                   </div>				   
+				   <!-- END MODULE #3 -->
+				</div>
+				<!-- end predefined_styles -->
+				<p>Change Home Header</p>
+				<select id="headers" class="show-menu-arrow selectpicker" onchange="document.location = this.value">
+				   <option value="">Select</option>
+				   <option value="index2.php">Video Header</option>
+				   <option value="index.php">Layerslider Header</option>
+				</select>
+				<p>Layout</p>
+					<a href="index_boxed.php" class="btn btn-primary btn-sm">Boxed</a>
+				<a href="index.php" class="btn btn-primary btn-sm">Full Width</a>
+			 </div>
+			 <!-- end col -->
+		  </div>
+		  <!-- end row -->
+	   </div>
+	   <!-- end form_holder -->
+	</div>
+	<!-- end demo_changer -->
+	<!-- End Switcher -->
+      <!-- Preloader -->
+      <div id="preloader">
+         <div class="spinner">
+            <div class="bounce1"></div>
+         </div>
+		  <!-- /spinner -->
+      </div>
+      <!-- /Preloader ends -->
+                  <?php
+include "include/header.php";
+?>
+	   <!-- /nav --><!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid overlay">
+   <div class="jumbo-heading">
+      <!-- section-heading -->
+      <div class="section-heading" data-aos="zoom-in">
+         <h1>Adoption</h1>
+      </div>
+      <!-- /section-heading -->
+      <nav aria-label="breadcrumb">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index-2.php">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Adoption</li>
+         </ol>
+      </nav>
+   </div>
+   <!-- /jumbo-heading -->
+</div>
+<!-- /jumbotron -->
+<!-- ==== Page Content ==== -->
+<div class="page">
+   <div class="container block-padding pt-0">
+      <div class="col-lg-8 offset-lg-2 text-center">
+         <h3>Find a new furry Friend</h3>
+         <p>Does your dog have some dog friends? Invite them over to your house or to the park for some playtime! This way, you’ll get the chance to catch up with your friends too – and you’ll have one tired dog at the end of the day. Becoming a dog owner is a great way to meet new friends too.</p>
+      </div>
+      <!-- First row: Adopt a pet -->
+      <div class="row mt-5">
+         <!-- Pet  -->
+         <div class="adopt-card col-md-6 col-xl-4 res-margin">
+            <div class="card bg-light-custom">
+               <div class="thumbnail text-center">
+                  <!-- Image -->
+                  <img src="img/bokchoy.jfif" class="border-irregular1 img-fluid" alt="" style="width:300px;height: 200px">
+                  <!-- Name -->
+                  <div class="caption-adoption">
+                     <h6 class="adoption-header">BokChoy</h6>
+                     <!-- List -->
+                     <ul class="list-unstyled">
+                           <li><strong>Cost:</strong>Rs.750</li>
+                        <li><strong>Quantity: </strong> 1</li>
+                     </ul>
+                     <!-- Buttons -->								  
+                     <div class="text-center">
+                        <a href="payment.php?Id=20" class="btn btn-primary">Pay</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- /thumbnail -->
+            </div>
+            <!-- /card -->
+         </div>
+         <!-- /adopt-card -->
+         <!-- /pet -->
+         <!-- Pet  -->
+         <div class="adopt-card col-md-6 col-xl-4 res-margin" style="height: 500px">
+            <div class="card bg-light-custom">
+               <div class="thumbnail text-center">
+                  <!-- Image -->
+                  <img src="img/bellpeppers.jpg" class="border-irregular1 img-fluid" alt=""    style="width:300px;height:200px">
+                  <!-- Name -->
+                  <div class="caption-adoption">
+                     <h6 class="adoption-header">Bellpeppers</h6>
+                     <!-- List -->
+                     <ul class="list-unstyled">
+                               <li><strong>Cost:</strong>Rs.100</li>
+                        <li><strong>Quantity: </strong> 1</li>
+                     </ul>
+                     <!-- Buttons -->								  
+                     <div class="text-center">
+                        <a href="payment.php?Id=19" class="btn btn-primary">Pay</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- /thumbnail -->
+            </div>
+            <!-- /card -->
+         </div>
+         <!-- /adopt-card -->
+         <!-- /pet -->
+         <!-- Pet  -->
+         <div class="adopt-card col-md-6 col-xl-4 res-margin">
+            <div class="card bg-light-custom">
+               <div class="thumbnail text-center">
+                  <!-- Image -->
+                  <img src="img/carrot.jfif" class="border-irregular1 img-fluid" alt="" style="width:300px;height: 200px">
+                  <!-- Name -->
+                  <div class="caption-adoption">
+                     <h6 class="adoption-header">Carrot</h6>
+                     <!-- List -->
+                     <ul class="list-unstyled">
+                        <li><strong>Cost:</strong>Rs.250</li>
+                        <li><strong>Quantity: </strong> 1</li>
+                     
+                     </ul>
+                     <!-- Buttons -->								  
+                     <div class="text-center">
+                        <a href="payment.php?Id=18" class="btn btn-primary">Pay</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- /thumbnail -->
+            </div>
+            <!-- /card -->
+         </div>
+         <!-- /adopt-card -->
+         <!-- /pet -->
+         <!-- Pet  -->
+         
+         <!-- /adopt-card -->
+         <!-- /pet -->
+      </div>
+         <div class="row mt-5">
+
+          <div class="adopt-card col-md-6 col-xl-4 res-margin">
+            <div class="card bg-light-custom">
+               <div class="thumbnail text-center">
+                  <!-- Image -->
+                  <img src="img/rabbithouse.jpg" class="border-irregular1 img-fluid" alt="" style="width:300px;height: 200px">
+                  <!-- Name -->
+                  <div class="caption-adoption">
+                     <h6 class="adoption-header">Rabbit Cage</h6>
+                     <!-- List -->
+                     <ul class="list-unstyled">
+                        <li><strong>Cost:</strong>Rs.250</li>
+                        <li><strong>Quantity: </strong> 1</li>
+                     
+                     </ul>
+                     <!-- Buttons -->                         
+                     <div class="text-center">
+                        <a href="payment.php?Id=32" class="btn btn-primary">Pay</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- /thumbnail -->
+            </div>
+            <!-- /card -->
+         </div>
+          <div class="adopt-card col-md-6 col-xl-4 res-margin">
+            <div class="card bg-light-custom">
+               <div class="thumbnail text-center">
+                  <!-- Image -->
+                  <img src="img/rabbitbelt.png" class="border-irregular1 img-fluid" alt="" style="width:300px;height: 200px">
+                  <!-- Name -->
+                  <div class="caption-adoption">
+                     <h6 class="adoption-header">Rabbit Belt</h6>
+                     <!-- List -->
+                     <ul class="list-unstyled">
+                        <li><strong>Cost:</strong>Rs.250</li>
+                        <li><strong>Quantity: </strong> 1</li>
+                     
+                     </ul>
+                     <!-- Buttons -->                         
+                     <div class="text-center">
+                        <a href="payment.php?Id=34" class="btn btn-primary">Pay</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- /thumbnail -->
+            </div>
+            <!-- /card -->
+         </div>
+
+          <div class="adopt-card col-md-6 col-xl-4 res-margin">
+            <div class="card bg-light-custom">
+               <div class="thumbnail text-center">
+                  <!-- Image -->
+                  <img src="img/rabbitbed.jfif" class="border-irregular1 img-fluid" alt="" style="width:300px;height: 200px">
+                  <!-- Name -->
+                  <div class="caption-adoption">
+                     <h6 class="adoption-header">Rabbit Bed</h6>
+                     <!-- List -->
+                     <ul class="list-unstyled">
+                        <li><strong>Cost:</strong>Rs.250</li>
+                        <li><strong>Quantity: </strong> 1</li>
+                     
+                     </ul>
+                     <!-- Buttons -->                         
+                     <div class="text-center">
+                        <a href="payment.php?Id=33" class="btn btn-primary">Pay</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- /thumbnail -->
+            </div>
+            <!-- /card -->
+         </div>
+         <!-- /adopt-card -->
+         <!-- /pet -->
+         <!-- Pet  -->
+         
+         <!-- /adopt-card -->
+         <!-- /pet -->
+      </div>
+      <!-- /row -->      <!-- Second row: Adopt a pet -->
+      
+         <!-- /adopt-card -->
+
+      <!-- /row -->
+      <div class="col-md-12 mt-5">
+	    <!-- pagination -->
+         <nav aria-label="pagination">
+            <ul class="pagination float-right">
+               <li class="page-item"><a class="page-link active" href="#">1</a></li>
+               <li class="page-item"><a class="page-link" href="#">2</a></li>
+               <li class="page-item"><a class="page-link" href="#">3</a></li>
+               <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+         </nav>
+		   <!-- /nav -->
+      </div>
+	   <!-- /col-md -->
+   </div>
+   <!-- /container -->
+</div>
+<!-- /page -->
+<!-- ==== footer ==== -->
+<footer class="text-light">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-6">
+            <a class="navbar-brand" href="index.php"><i class="flaticon-dog-20"></i><span>Pet Shop!</span></a>
+            <p class="mt-3">Our Shop is very loyal and low cost prices in every pets. so, u will believed in shop and find your new friend...</p>
+         </div>
+		 <!--/ col-lg -->
+         <div class="col-lg-3">
+            <h6><i class="fas fa-envelope margin-icon"></i>Contact Us</h6>
+            <ul class="list-unstyled">
+               <li>(123) 456-789</li>
+               <li><a href="mailto:email@yoursite.com">email@yoursite.com</a></li>
+               <li>T.Nagar, Chennai-600200 </li>
+            </ul>
+			<!--/ul -->
+         </div>
+		  <!--/ col-lg -->
+         <div class="col-lg-3">
+            <h6><i class="far fa-clock margin-icon"></i>Working Hours</h6>
+            <ul class="list-unstyled">
+               <li>Open 9am - 10pm</li>
+               <li>Holidays - Closed</li>
+               <li>Weekends - Closed</li>
+            </ul>
+			<!--/ul -->
+         </div>
+		 <!--/ col-lg -->
+      </div>
+	  <!--/ row-->
+      >
+   </div>
+   <!--/ container -->
+   <!-- Go To Top Link -->
+   <div class="page-scroll hidden-sm hidden-xs">
+      <a href="#top" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+   </div>
+   <!--/page-scroll-->
+</footer>
+<!--/ footer-->
+<!-- Bootstrap core & Jquery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Custom Js -->
+<script src="js/custom.js"></script>
+<script src="js/plugins.js"></script>
+<!-- Prefix free -->
+<script src="js/prefixfree.min.js"></script>
+<!-- Bootstrap Select Tool (For Module #4) -->
+<script src="switcher/js/bootstrap-select.js"></script>
+<!-- All Scripts & Plugins -->
+<script src="switcher/js/dmss.js">
+  
+</script>	
+</body>
+
+<!-- Mirrored from www.ingridkuhn.com/themes/Pet Shop!/adoption.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Jan 2022 08:16:29 GMT -->
+</html

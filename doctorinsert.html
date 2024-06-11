@@ -1,0 +1,25 @@
+<?php
+include "config.php";
+//print_r($_POST);die;
+if(isset($_POST['submit']))
+{
+	$category=$_POST['Category'];
+	$name=$_POST['Name'];
+	$contact=$_POST['Contact'];
+	$address=$_POST['Address'];
+	$description=$_POST['Description'];
+	$rating=$_POST['Rating'];
+
+	// $conn=mysqli_connect("localhost","root","","pet");
+	// $conn=mysqli_connect("localhost","id18195887_petexchange","b!}Kdz@0KB^WiGpM","id18195887_petshop");
+	$sql="INSERT INTO doctor (Category,Name,Contact,Address,Description,Rating) VALUES('$category','$name','$contact','$address','$description','$rating')";
+//print_r($sql);die;
+	$resu=mysqli_query($conn,$sql);
+//print_r($result);die;
+     if($resu==true){
+	echo "added";
+}else {
+	echo "not added";
+}
+
+}
